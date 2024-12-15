@@ -1,8 +1,6 @@
-# Создание пользовательского исключения
 class StepValueError(ValueError):
     pass
 
-# Создание класса Iterator
 class Iterator:
     def __init__(self, start, stop, step=1):
         if step == 0:
@@ -23,7 +21,6 @@ class Iterator:
         self.pointer += self.step
         return current
 
-# Пример выполнения кода
 try:
     iter1 = Iterator(100, 200, 0)
     for i in iter1:
